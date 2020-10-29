@@ -25,5 +25,7 @@ jobs:
         node-version: 12
     - run: npm ci
       working-directory: ${{env.working-directory}}
+    - run: npm run compile
+      working-directory: ${{env.working-directory}}
     - run: npm test
       working-directory: ${{env.working-directory}}
